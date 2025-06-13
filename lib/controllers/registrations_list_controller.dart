@@ -44,4 +44,9 @@ class RegistrationsListController extends GetxController {
     if (name.length <= 1) return "*";
     return name[0] + "*" * (name.length - 1);
   }
+
+  String maskAddress(String address) {
+    if (address.length <= 3) return "*" * address.length;
+    return address.substring(0, 5) + "*" * (address.length - 5);
+  }
 }

@@ -65,7 +65,7 @@ class RegistrationsListPage extends StatelessWidget {
                         Text(controller.maskEmail(reg.email), style: GoogleFonts.inter(fontSize: 16)),
                         SizedBox(height: 10),
                         Text("Alamat:", style: GoogleFonts.inter(fontWeight: FontWeight.bold)),
-                        Text(reg.address, style: GoogleFonts.inter(fontSize: 16)),
+                        Text(controller.maskAddress(reg.address), style: GoogleFonts.inter(fontSize: 16)),
                       ],
                     ),
                   );
