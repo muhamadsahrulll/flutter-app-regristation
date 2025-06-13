@@ -183,25 +183,29 @@ class RegistrationPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 16),
-                SizedBox(
-                  width: double.infinity,
+                Align(
+                  alignment: Alignment.center,
+                  child: SizedBox(
+                  width: 120, // Smaller width than "Kirim" button
                   child: ElevatedButton(
                     onPressed: () => Get.toNamed("/"),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey,
-                      foregroundColor: Colors.black,
-                      elevation: 0,
-                      padding: EdgeInsets.symmetric(vertical: 10),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(6),
-                        side: BorderSide(color: Colors.black, width: 2),
-                      ),
-                      textStyle: GoogleFonts.inter(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16,
-                      ),
+                    backgroundColor: Colors.grey,
+                    foregroundColor: Colors.black,
+                    elevation: 0,
+                    shadowColor: const Color.fromARGB(255, 0, 0, 0),
+                    padding: EdgeInsets.symmetric(vertical: 10),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(6),
+                      side: BorderSide(color: Colors.black, width: 2),
+                    ),
+                    textStyle: GoogleFonts.inter(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 16,
+                    ),
                     ),
                     child: Text("Kembali"),
+                  ),
                   ),
                 ),
               ],

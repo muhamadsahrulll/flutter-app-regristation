@@ -58,7 +58,7 @@ class LandingPage extends StatelessWidget {
                         backgroundColor: Colors.orange,
                         foregroundColor: const Color.fromARGB(255, 0, 0, 0),
                         elevation: 0, // Remove default shadow
-                        shadowColor: Colors.transparent,
+                        //shadowColor: Colors.transparent,
                         padding: EdgeInsets.symmetric(vertical: 18),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8),
@@ -70,6 +70,42 @@ class LandingPage extends StatelessWidget {
                         ),
                         ),
                         child: Text('Daftar Sekarang'),
+                      ),
+                      ),
+                    ),
+
+                    SizedBox(height: 16),
+                    Align(
+                      alignment: Alignment.center,
+                      child: Container(
+                      width: 180, // Set a fixed smaller width
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(6, 8),
+                          blurRadius: 0,
+                        ),
+                        ],
+                      ),
+                      child: ElevatedButton(
+                        onPressed: () => Get.toNamed('/registrations'),
+                        style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.grey,
+                        foregroundColor: Colors.black,
+                        elevation: 0,
+                        padding: EdgeInsets.symmetric(vertical: 18),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                          side: BorderSide(color: Colors.black, width: 2),
+                        ),
+                        textStyle: GoogleFonts.inter(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 16,
+                        ),
+                        ),
+                        child: Text('Lihat Pendaftar'),
                       ),
                       ),
                     ),
