@@ -124,7 +124,7 @@ class LandingPage extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text('GitHub: github.com/johndoe'),
+                          child: Text('https://github.com/muhamadsahrulll'),
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.black,
                             textStyle: GoogleFonts.inter(
@@ -136,7 +136,7 @@ class LandingPage extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text('Instagram: @johndoe'),
+                          child: Text('Instagram: @sahrulllxd'),
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.black,
                           ),
